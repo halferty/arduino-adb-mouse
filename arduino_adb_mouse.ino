@@ -29,7 +29,6 @@ volatile unsigned char myAddress = 3;
 volatile int srqEnabled = 1;
 volatile int handlerId = 2;
 ADNS2620 mouse(ADNS_SDIO_PIN, ADNS_SCK_PIN);
-unsigned char mouseValue = 0;
 void setup() {
   mouse.begin();
   delay(100);
