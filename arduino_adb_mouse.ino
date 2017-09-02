@@ -53,8 +53,6 @@ void loop() {
   }
   dx = mouse.read(DELTA_X_REG_2) * MOUSE_SENSATIVITY;
   dy = -mouse.read(DELTA_Y_REG_2) * MOUSE_SENSATIVITY;
-  
-//  buttonState = digitalRead(BUTTON_PIN);
   haveDataToSend = 1;
 }
 void lowPulse(unsigned int duration) {
