@@ -9,7 +9,7 @@
 #define ADNS_SDIO_PIN 3
 #define ADNS_SCK_PIN 4
 #define BUTTON_PIN 5
-#define SENDOR_UPDATES_PER_SECOND 20
+#define SENSOR_UPDATES_PER_SECOND 20
 #define MOUSE_SENSATIVITY 0.3
 #define WAITING_FOR_ATTENTION 0
 #define WAITING_FOR_SYNC 1
@@ -45,7 +45,7 @@ void setup() {
   delay(200);
 }
 void loop() {
-  delay(1000 / SENDOR_UPDATES_PER_SECOND);
+  delay(1000 / SENSOR_UPDATES_PER_SECOND);
   if (digitalRead(BUTTON_PIN)) {
     buttonState = 0;
   } else {
